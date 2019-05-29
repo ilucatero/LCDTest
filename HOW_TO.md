@@ -27,7 +27,7 @@ pip install --upgrade setuptools
 pip install -r requirements.txt
 ```
 
-Before exit, once you've done, exit the virtual env:
+Before exit, once you've done, close the virtual env:
 
 ```console
 deactivate
@@ -36,5 +36,11 @@ deactivate
 ## Run unit test
 
 ```python
-python test/testMain.py
+python -m unittest discover
+```
+
+## Run the application
+
+```bash
+python main.py
 ```

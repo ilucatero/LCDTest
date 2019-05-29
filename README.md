@@ -1,8 +1,10 @@
-# Affichage de Nùmeros sur écran LCD (simulé)
+# Affichage de Numéros sur écran LCD (simulé)
 
-Application en Ligne de Commandes qui affiche des numéros sur un écran LCD simulé. Cet écran dispose d’un grid de 3x3, chaque case peut contenir une espace, un tiret bas, ou un pipe.
+Application en Ligne de Commandes qui affiche des numéros sur un écran LCD simulé.
 
-Par exemple (ici en utilisant un point à la place d’espace)
+L'écran dispose d’un grid de 3x3, chaque case peut contenir une espace, un tiret bas, ou un pipe.
+
+Par exemple (ici en utilisant un point à la place d'espace)
 
 ```text
 ._.   ...   ._.   ._.   ...   ._.   ._.   ._.   ._.   ._.
