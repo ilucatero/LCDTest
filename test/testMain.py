@@ -43,7 +43,7 @@ class BaseTestCase(unittest.TestCase):
     def test_multi_digit_value(self):
         value = self.dispay.get_digits('09')
         self.assertEqual(value[0].d, ZERO_DIGIT)
-        #TODO self.assertEqual(value[1].d, NINE_DIGIT)
+        self.assertEqual(value[1].d, NINE_DIGIT)
 
     def test_digits_to_print(self):
         expected_line =  " _       _ \n" 
