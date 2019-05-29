@@ -1,0 +1,17 @@
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# vscode
+.vscode/
