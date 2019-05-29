@@ -21,3 +21,7 @@ Exemple: 910
 ```
 
 Le résultat sera affiché sur la ligne de commandes.
+
+## Voir plus
+
+Pour avoir le détail de comment executer cet exersice voir [ici](HOW_TO.md).
