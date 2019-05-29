@@ -38,7 +38,7 @@ class BaseTestCase(unittest.TestCase):
         value = self.dispay.get_digits('0')
         self.assertEqual(value[0].d, ZERO_DIGIT)
         value = self.dispay.get_digits('9')
-        #TODO self.assertEqual(value[0].d, NINE_DIGIT)
+        self.assertEqual(value[0].d, NINE_DIGIT)
 
     def test_multi_digit_value(self):
         value = self.dispay.get_digits('09')
