@@ -1,32 +1,6 @@
-""" Script to transform digits into LCD format """
+""" Class to transform digits into LCD format """
 
-#from collectors.metric_collector import MetricCollector        
-
-VALID_DIGIT = {
-    '0' : [
-            ' _ ',
-            '| |',
-            '|_|'
-        ],
-    '1' : [
-            '   ',
-            '  |',
-            '  |'
-        ]
-}
-
-class digit():
-    d = []
-    def __init__(self, digit):
-        self.d = self._trasform(digit)
-
-    def _trasform(self, digit):
-        try:
-            return VALID_DIGIT[digit]
-        except:
-            return VALID_DIGIT['0']
-        
-
+from lcd_modules.lcd_digit import digit
 
 class LCDDisplay():
     """ Class to digit trasformation """
@@ -38,3 +12,7 @@ class LCDDisplay():
             for value in values:
                 digits.append(digit(value))
         return digits
+
+    @staticmethod
+    def prepare_to_print():
+        raise NotImplementedError()
