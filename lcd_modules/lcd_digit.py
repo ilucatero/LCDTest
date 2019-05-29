@@ -55,7 +55,7 @@ VALID_DIGITS = {
 
 }
 
-class digit():
+class Digit():
     d = []
     def __init__(self, digit, resolution = MIN_RESOLUTION):
         self.d = self._trasform(digit)
