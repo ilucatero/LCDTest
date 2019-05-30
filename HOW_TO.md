@@ -1,6 +1,6 @@
 # HOW TO RUN IT
 
-## Install locally
+## Prepare environment
 
 This script, it requires Python3.7 and pip3.
 
@@ -13,7 +13,6 @@ virtualenv venv
 source venv/bin/activate
 pip install --upgrade pip
 pip install --upgrade setuptools
-# below line may require a previous yum/apt install for : unixodbc-dev, python3.7-dev
 pip install -r requirements.txt
 ```
 
@@ -35,12 +34,12 @@ deactivate
 
 ## Run unit test
 
-```python
+```console
 python -m unittest discover
 ```
 
 ## Run the application
 
-```bash
+```console
 python main.py
 ```

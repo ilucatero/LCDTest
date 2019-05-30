@@ -1,4 +1,4 @@
-# Affichage de Numéros sur écran LCD (simulé)
+# Affichage des Numéros sur écran LCD (simulé)
 
 Application en Ligne de Commandes qui affiche des numéros sur un écran LCD simulé.
 
