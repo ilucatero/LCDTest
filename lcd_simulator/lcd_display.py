@@ -1,6 +1,6 @@
 """ Class to transform digits into LCD format """
 
-from lcd_modules.lcd_digit import Digit, MIN_RESOLUTION
+from lcd_simulator.lcd_digit import Digit, MIN_RESOLUTION
 
 class LCDDisplay():
     """ Class to digit trasformation """
@@ -32,3 +32,7 @@ class LCDDisplay():
                     line += ' '
 
         return line
+    
+    def get_line_to_display(self, values):
+        digits = self.get_digits(values)
+        return self.prepare_to_display(digits)

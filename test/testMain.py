@@ -2,7 +2,7 @@
 
 import unittest
 
-from lcd_modules.lcd_display import LCDDisplay
+from lcd_simulator.lcd_display import LCDDisplay
 
 #  '._.',   '...',   '._.',   '._.',   '...',   '._.',   '._.',   '._.',   '._.,'   '._.',
 #  '|.|',   '..|',   '._|',   '._|',   '|_|',   '|_.',   '|_.',   '..|',   '|_|,'   '|_|',
