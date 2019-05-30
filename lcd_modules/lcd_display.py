@@ -22,8 +22,10 @@ class LCDDisplay():
         """ Transform the Digit array into a readable string to print on display """
         line = ""
         size = len(digits)
+        for idx in range(self.frame_resolution):
+            for i, item in enumerate(digits):
                 line += item.d[idx]
-                # Check if is the last element
+                #Check if is the last element
                 if i == size-1:
                     line += '\n'
                 else:
