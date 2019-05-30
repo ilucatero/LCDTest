@@ -46,13 +46,22 @@ class BaseTestCase(unittest.TestCase):
         self.assertEqual(value[1].d, NINE_DIGIT)
 
     def test_digits_to_print(self):
-        expected_line =  " _       _ \n" 
-        expected_line += "|_|   | | |\n"
-        expected_line += "  |   | |_|\n"
-        value = self.dispay.get_digits('910')
-        #TODO line = self.dispay.prepare_to_print(value)
-        #TODO self.assertEqual(line, expected_line)
+        expected_line_single =  ' _ \n'
+        expected_line_single += "|_|\n"
+        expected_line_single += "  |\n"
+
+        expected_line_multi =  " _   _       _ \n"
+        expected_line_multi += "| | |_|   | | |\n"
+        expected_line_multi += "|_|   |   | |_|\n"
         
+        digits = self.dispay.get_digits('9')
+        line = self.dispay.prepare_to_display(digits)
+        self.assertEqual(line, expected_line_single)
+        
+        digits = self.dispay.get_digits('0910')
+        line = self.dispay.prepare_to_display(digits)
+        self.assertEqual(line, expected_line_multi)
+
 def main():
     unittest.main()
 
