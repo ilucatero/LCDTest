@@ -7,9 +7,10 @@ from lcd_simulator.lcd_display import LCDDisplay
 def main():
     """ Runs the Lcd Display simulator asking the user the values to display """
     qit = False
-    
-    empty_frame = input("What the character to use as empty frame on display?\nValid options:\n  (space)\n  .\nYour choice:")
-    if not empty_frame in [' ','.']:
+
+    empty_frame = input('What the character to use as empty frame on display? \
+                    \nValid options:\n  (space)\n  .\nYour choice:')
+    if not empty_frame in [' ', '.']:
         print("The given value is not valid!\nExiting...")
         qit = True
 

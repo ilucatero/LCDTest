@@ -14,10 +14,7 @@ class LCDDisplay():
 
     def get_digits(self, values):
         """ Transform the given string values into array of Digit objects  with lcd format """
-        digits = []
-        if values:
-            for value in values:
-                digits.append(Digit(value, self.frame_resolution, self.empty_space))
+        digits = [Digit(value, self.frame_resolution, self.empty_space) for value in values]
         return digits
 
     def prepare_to_display(self, digits):
