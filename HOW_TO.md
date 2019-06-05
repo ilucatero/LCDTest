@@ -4,7 +4,7 @@
 
 This script, it requires Python3.7 and pip3.
 
-To be able to run this script locally, just create a Python virtual env.
+To be able to run this script locally, just create a Python virtual env (this will allow to isolate imports and the python3 version).
 
 Linux version:
 
